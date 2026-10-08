@@ -1,76 +1,58 @@
-\# DevForge AI
+# DevForge AI
 
 
 
-\### Autonomous AI Software Development System
+### Autonomous AI Software Development System
 
 
 
-DevForge AI is an \*\*autonomous AI-powered software development system\*\* designed to transform natural-language software requirements into a structured development workflow.
+DevForge AI is an autonomous AI-powered software development system that transforms natural-language software requirements into a structured software development workflow.
 
 
 
-It uses specialized AI agents for:
+It uses specialized AI agents for requirement analysis, planning, architecture, code generation, testing, debugging, and re-testing.
 
 
 
-\* Requirement analysis
-
-\* Project planning
-
-\* Architecture design
-
-\* Code generation
-
-\* Automated testing
-
-\* Bug detection
-
-\* Debugging
-
-\* Re-testing
+The system can detect testing failures, send the project to a Debugger Agent, apply fixes, and run testing again.
 
 
 
-The system can automatically detect testing failures, send the project to the Debugger Agent, apply fixes, and run testing again until the workflow reaches a passing state.
+---
 
 
 
-\---
+## Key Features
 
 
 
-\## Key Features
+* Autonomous multi-agent software development
+
+* AI-powered requirement analysis
+
+* Automatic project planning
+
+* Software architecture generation
+
+* AI-based code generation
+
+* Automated testing
+
+* Automatic bug detection and debugging
+
+* Self-correction and re-testing loop
+
+* Gemini-powered AI agents
+
+* LangGraph-based workflow orchestration
 
 
 
-\* Autonomous multi-agent software development
-
-\* AI-powered requirement analysis
-
-\* Automatic project planning
-
-\* Software architecture generation
-
-\* AI-based code generation
-
-\* Automated testing
-
-\* Automatic bug detection and debugging
-
-\* Self-correction and re-testing loop
-
-\* Gemini-powered AI agents
-
-\* LangGraph-based workflow orchestration
+---
 
 
 
-\---
-
-
-
-\## Autonomous Workflow
+## Autonomous Workflow
 
 
 
@@ -78,73 +60,73 @@ The system can automatically detect testing failures, send the project to the De
 
 User Requirement
 
-&#x20;      |
+         |
 
-&#x20;      v
+         v
 
 Requirement Agent
 
-&#x20;      |
+         |
 
-&#x20;      v
+         v
 
 Planning Agent
 
-&#x20;      |
+         |
 
-&#x20;      v
+         v
 
 Architect Agent
 
-&#x20;      |
+         |
 
-&#x20;      v
+         v
 
 Developer Agent
 
-&#x20;      |
+         |
 
-&#x20;      v
+         v
 
 Testing Agent
 
-&#x20;      |
+         |
 
-&#x20;      +------ PASS ------> Completed
+         +------ PASS ------> Completed
 
-&#x20;      |
+         |
 
-&#x20;      +------ FAIL
+         +------ FAIL
 
-&#x20;              |
+                 |
 
-&#x20;              v
+                 v
 
-&#x20;       Debugger Agent
+          Debugger Agent
 
-&#x20;              |
+                 |
 
-&#x20;              v
+                 v
 
-&#x20;       Testing Agent
+          Testing Agent
 
-&#x20;              |
+                 |
 
-&#x20;              +------ PASS ------> Completed
+                 +------ PASS ------> Completed
 
-&#x20;              |
+                 |
 
-&#x20;              +------ FAIL ------> Debugger
+                 +------ FAIL ------> Debugger
 
 ```
 
 
 
-\---
+---
 
 
 
-\## AI Agents
+## AI Agents
 
 
 
@@ -166,19 +148,15 @@ Testing Agent
 
 
 
-\---
+---
 
 
 
-\## Self-Correction Loop
+## Self-Correction Loop
 
 
 
-One of the main capabilities of DevForge AI is its \*\*automatic debugging loop\*\*.
-
-
-
-When the Testing Agent detects failures:
+One of the main capabilities of DevForge AI is its automatic debugging and re-testing loop.
 
 
 
@@ -186,33 +164,33 @@ When the Testing Agent detects failures:
 
 Testing
 
-&#x20;  |
+     |
 
-&#x20;  v
+     v
 
 FAIL
 
-&#x20;  |
+     |
 
-&#x20;  v
+     v
 
 Debugger
 
-&#x20;  |
+     |
 
-&#x20;  v
+     v
 
 Fix Issues
 
-&#x20;  |
+     |
 
-&#x20;  v
+     v
 
 Testing Again
 
-&#x20;  |
+     |
 
-&#x20;  v
+     v
 
 PASS
 
@@ -220,55 +198,47 @@ PASS
 
 
 
-This allows the system to automatically move from \*\*development → testing → debugging → re-testing\*\*.
+This allows DevForge AI to automatically move through:
 
 
 
-\---
+**Development -> Testing -> Debugging -> Re-testing -> Completion**
 
 
 
-\## Technology Stack
+---
 
 
 
-\* \*\*Python\*\*
-
-\* \*\*Google Gemini API\*\*
-
-\* \*\*LangGraph\*\*
-
-\* \*\*LangChain\*\*
-
-\* \*\*Pydantic\*\*
-
-\* \*\*Git \& GitHub\*\*
+## Technology Stack
 
 
 
-The generated application can also contain technologies such as:
+* Python
+
+* Google Gemini API
+
+* LangGraph
+
+* LangChain
+
+* Pydantic
+
+* Git
+
+* GitHub
 
 
 
-\* Node.js
-
-\* JavaScript
-
-\* Backend APIs
-
-\* Database components
+The generated applications can also use technologies such as Node.js, JavaScript, backend APIs, and databases depending on the project requirements.
 
 
 
-depending on the requirements provided to DevForge AI.
+---
 
 
 
-\---
-
-
-
-\## Project Structure
+## Project Structure
 
 
 
@@ -282,11 +252,11 @@ devforge-ai/
 
 +-- requirements.txt
 
-+-- test\_config.py
++-- test_config.py
 
-+-- test\_debugger.py
++-- test_debugger.py
 
-+-- test\_gemini.py
++-- test_gemini.py
 
 |
 
@@ -296,7 +266,7 @@ devforge-ai/
 
 |   |   +-- agent.py
 
-|   |   +-- test\_agent.py
+|   |   +-- test_agent.py
 
 |   |
 
@@ -310,7 +280,7 @@ devforge-ai/
 
 |   |   +-- agent.py
 
-|   |   +-- test\_agent.py
+|   |   +-- test_agent.py
 
 |   |
 
@@ -318,7 +288,7 @@ devforge-ai/
 
 |   |   +-- agent.py
 
-|   |   +-- test\_agent.py
+|   |   +-- test_agent.py
 
 |   |
 
@@ -326,7 +296,7 @@ devforge-ai/
 
 |   |   +-- agent.py
 
-|   |   +-- test\_agent.py
+|   |   +-- test_agent.py
 
 |   |
 
@@ -334,335 +304,9 @@ devforge-ai/
 
 |       +-- agent.py
 
-|       +-- test\_agent.py
-
-|
-
-+-- core/
-
-|   +-- config/
-
-|   |   +-- settings.py
-
-|   |
-
-|   +-- orchestrator/
-
-|   |   +-- workflow.py
-
-|   |   +-- test\_workflow.py
-
-|   |
-
-|   +-- state/
-
-|       +-- agent\_state.py
-
-|
-
-+-- models/
-
-|   +-- test\_config.py
-
-|
-
-+-- backend/
-
-&#x20;   +-- main.py
+|       +-- test_agent.py
 
 ```
-
-
-
-\---
-
-
-
-\## Installation
-
-
-
-\### 1. Clone the Repository
-
-
-
-```bash
-
-git clone https://github.com/harishmishra666/devforge-ai.git
-
-cd devforge-ai
-
-```
-
-
-
-\### 2. Create a Virtual Environment
-
-
-
-Windows:
-
-
-
-```powershell
-
-python -m venv venv
-
-```
-
-
-
-Activate it:
-
-
-
-```powershell
-
-venv\\Scripts\\activate
-
-```
-
-
-
-\### 3. Install Dependencies
-
-
-
-```powershell
-
-pip install -r requirements.txt
-
-```
-
-
-
-\### 4. Configure Gemini API
-
-
-
-Create the required `.env` file and add your Gemini API key:
-
-
-
-```env
-
-GEMINI\_API\_KEY=your\_api\_key\_here
-
-```
-
-
-
-\*\*Never commit your real API key to GitHub.\*\*
-
-
-
-\---
-
-
-
-\## Run DevForge AI
-
-
-
-After activating the virtual environment and configuring the API key:
-
-
-
-```powershell
-
-python -m core.orchestrator.test\_workflow
-
-```
-
-
-
-The system will execute the autonomous development workflow.
-
-
-
-\---
-
-
-
-\## Example Workflow Result
-
-
-
-DevForge AI has been tested through a complete autonomous development cycle:
-
-
-
-```text
-
-Requirement
-
-&#x20;   |
-
-Planning
-
-&#x20;   |
-
-Architect
-
-&#x20;   |
-
-Developer
-
-&#x20;   |
-
-Testing
-
-&#x20;   |
-
-&#x20; FAIL
-
-&#x20;   |
-
-Debugger
-
-&#x20;   |
-
-Testing
-
-&#x20;   |
-
-&#x20; PASS
-
-&#x20;   |
-
-Completed
-
-```
-
-
-
-During testing, the system successfully demonstrated automatic failure detection, debugging, fixing, and re-testing.
-
-
-
-\---
-
-
-
-\## Security
-
-
-
-DevForge AI uses environment variables for API credentials.
-
-
-
-Sensitive files such as:
-
-
-
-```text
-
-.env
-
-\*.env
-
-venv/
-
-.venv/
-
-\_\_pycache\_\_/
-
-\*.pyc
-
-```
-
-
-
-are excluded through `.gitignore`.
-
-
-
-\*\*Never upload API keys, passwords, tokens, or other secrets to GitHub.\*\*
-
-
-
-\---
-
-
-
-\## Future Roadmap
-
-
-
-Planned improvements include:
-
-
-
-\* More specialized AI agents
-
-\* Improved code generation
-
-\* Better automated testing
-
-\* Advanced debugging strategies
-
-\* Persistent project memory
-
-\* Multi-model support
-
-\* Web-based DevForge AI interface
-
-\* GitHub automation
-
-\* CI/CD integration
-
-\* Advanced RAG-based project knowledge
-
-\* Human-in-the-loop approval workflows
-
-
-
-\---
-
-
-
-\## Author
-
-
-
-\### Harish Mishra
-
-
-
-\*\*AI \& Automation | Agentic AI | Generative AI | Python\*\*
-
-
-
-DevForge AI is an exploration of autonomous AI agents and intelligent software engineering workflows.
-
-
-
-\---
-
-
-
-\## License
-
-
-
-This project is currently intended as a personal AI engineering and research project.
-
-
-
-\---
-
-
-
-\## GitHub
-
-
-
-Repository:
-
-
-
-https://github.com/harishmishra666/devforge-ai
 
 
 
